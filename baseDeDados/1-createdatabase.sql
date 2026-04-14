@@ -1,0 +1,5 @@
+DROP DATABASE IF EXISTS caoTrilha2;
+
+CREATE DATABASE caoTrilha2;
+
+USE caoTrilha2;

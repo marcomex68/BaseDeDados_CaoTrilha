@@ -1,0 +1,14 @@
+USE caoTrilha2;
+
+DROP TABLE IF EXISTS clientes;
+
+
+CREATE TABLE clientes (
+    id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(100) NOT NULL,
+    telefone VARCHAR(20) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    morada VARCHAR(150) NOT NULL,
+    password VARCHAR(50) NOT NULL
+);
+
