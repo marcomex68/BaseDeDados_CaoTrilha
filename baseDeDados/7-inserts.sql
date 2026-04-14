@@ -74,7 +74,7 @@ VALUES
     (14, 'Floresta Encantada', '2025-08-05', 7.00, 'Gerês', 'Portugal'),
     (15, 'Paraíso Natural', '2025-08-10', 9.00, 'Açores', 'Portugal');
 
-INSERT INTO cao_trilhas (id_trilha, hora_inicio, hora_fim) 
+INSERT INTO hora_trilhas (id_trilha, hora_inicio, hora_fim) 
 VALUES
     (1, '2025-06-01 09:00:00', '2025-06-01 12:00:00'),
     (2, '2025-06-05 08:30:00', '2025-06-05 11:00:00'),
