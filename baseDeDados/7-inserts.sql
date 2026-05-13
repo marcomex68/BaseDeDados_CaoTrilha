@@ -19,61 +19,23 @@ VALUES
     (0, 'André Lopes', '926789012', 'andre.lopes@email.com', 'Rua da Escola 19, Guimarães', '123456'),
     (1, 'Marcos Alves', '936262284', '37076@esjaloures.org', 'Rua da Escola 19, Guimarães', '$2y$10$uT2rgweFd5L5RJ/9/uKrkeI2rDIbZi2EwMR76WSaeN7xZ5l3kFg4S');
 
-INSERT INTO caes (id_user, nome, raca, idade, estado, peso, sexo, esterilizado) 
+INSERT INTO trilhas (nome, data, kms, localidade) 
 VALUES
-    (1, 'Thor', 'Boiadeiro de Berna', 3, 'Estadia', 40.00, 'Macho', 0),
-    (2, 'Luna', 'Cão Islandês', 2, 'Creche', 18.00, 'Fêmea', 1),
-    (3, 'Simba', 'Chow Chow', 4, 'Estadia', 25.00, 'Macho', 1),
-    (4, 'Max', 'Golden Retriever', 5, 'Creche', 30.00, 'Macho', 0),
-    (5, 'Nina', 'Husky Siberiano', 3, 'Estadia', 22.00, 'Fêmea', 1),
-    (6, 'Kira', 'Husky Siberiano', 1, 'Creche', 20.00, 'Fêmea', 0),
-    (7, 'Bolt', 'Terra Nova', 6, 'Creche', 55.00, 'Macho', 1),
-    (8, 'Pongo', 'Dálmata', 2, 'Estadia', 24.00, 'Macho', 0),
-    (9, 'Zeus', 'Cane Corso', 4, 'Creche', 45.00, 'Macho', 0),
-    (10, 'Mia', 'Border Collie', 2, 'Estadia', 19.00, 'Fêmea', 1),
-    (11, 'Bobby', 'Shih Tzu', 5, 'Estadia', 7.00, 'Macho', 1),
-    (12, 'Rex', 'Rottweiler', 6, 'Creche', 50.00, 'Macho', 0),
-    (13, 'Toby', 'Pinscher', 3, 'Estadia', 5.00, 'Macho', 1),
-    (14, 'Perdita', 'Dálmata', 2, 'Estadia', 23.00, 'Fêmea', 0),
-    (15, 'Snow', 'Bichon Frisé', 1, 'Creche', 6.00, 'Fêmea', 1);
-
-
-INSERT INTO estadias (id_cao, data_entrada, data_saida, preco_total, pago) 
-VALUES
-    (1, '2025-01-02', '2025-01-05', 75.00, 1),
-    (2, '2025-01-10', '2025-01-15', 125.00, 0),
-    (3, '2025-02-01', '2025-02-03', 50.00, 1),
-    (4, '2025-02-05', '2025-02-10', 125.00, 1),
-    (5, '2025-02-12', '2025-02-14', 50.00, 0),
-    (6, '2025-03-01', '2025-03-04', 75.00, 1),
-    (7, '2025-03-10', '2025-03-15', 125.00, 0),
-    (8, '2025-03-18', '2025-03-20', 50.00, 1),
-    (9, '2025-04-01', '2025-04-07', 150.00, 1),
-    (10, '2025-04-10', '2025-04-12', 50.00, 0),
-    (11, '2025-04-15', '2025-04-18', 75.00, 1),
-    (12, '2025-05-01', '2025-05-05', 100.00, 1),
-    (13, '2025-05-07', '2025-05-09', 50.00, 0),
-    (14, '2025-05-12', '2025-05-16', 100.00, 1),
-    (15, '2025-05-20', '2025-05-25', 125.00, 0);
-
-
-INSERT INTO trilhas (id_cao, nome, data, kms, localidade) 
-VALUES
-    (1, 'Parque Nacional Peneda Gerês', '2025-06-01', 10.00, 'Gerês'),
-    (2, 'Pico do Areeiro', '2025-06-05', 7.00, 'Madeira'),
-    (3, 'Poços Verdes do Sobroso', '2025-06-10', 5.00, 'Viana do Castelo'),
-    (4, 'Sete Vales Suspensos', '2025-06-15', 12.00, 'Algarve'),
-    (5, 'Trilho do Poço do Inferno', '2025-06-20', 6.00, 'Serra da Estrela'),
-    (6, 'Trilho em Mira', '2025-06-25', 8.00, 'Mira'),
-    (7, 'Trilho para a Ponta', '2025-07-01', 9.00, 'Madeira'),
-    (8, 'Vereda da Ponta', '2025-07-05', 4.00, 'Madeira'),
-    (9, 'A Aldeia Mágica', '2025-07-10', 3.00, 'Sintra'),
-    (10, 'Vale do Rio Olo', '2025-07-15', 11.00, 'Mondim de Basto'),
-    (11, 'Trilho 7 Vales Suspensos', '2025-07-20', 12.00, 'Lagoa'),
-    (12, 'Praia da Costa', '2025-07-25', 5.00, 'Costa da Caparica'),
-    (13, 'Sesimbra', '2025-08-01', 6.00, 'Sesimbra'),
-    (14, 'Floresta Encantada', '2025-08-05', 7.00, 'Gerês'),
-    (15, 'Paraíso Natural', '2025-08-10', 9.00, 'Açores');
+    ('Parque Nacional Peneda Gerês', '2025-06-01', 10.00, 'Gerês'),
+    ('Pico do Areeiro', '2025-06-05', 7.00, 'Madeira'),
+    ('Poços Verdes do Sobroso', '2025-06-10', 5.00, 'Viana do Castelo'),
+    ('Sete Vales Suspensos', '2025-06-15', 12.00, 'Algarve'),
+    ('Trilho do Poço do Inferno', '2025-06-20', 6.00, 'Serra da Estrela'),
+    ('Trilho em Mira', '2025-06-25', 8.00, 'Mira'),
+    ('Trilho para a Ponta', '2025-07-01', 9.00, 'Madeira'),
+    ('Vereda da Ponta', '2025-07-05', 4.00, 'Madeira'),
+    ('A Aldeia Mágica', '2025-07-10', 3.00, 'Sintra'),
+    ('Vale do Rio Olo', '2025-07-15', 11.00, 'Mondim de Basto'),
+    ('Trilho 7 Vales Suspensos', '2025-07-20', 12.00, 'Lagoa'),
+    ('Praia da Costa', '2025-07-25', 5.00, 'Costa da Caparica'),
+    ('Sesimbra', '2025-08-01', 6.00, 'Sesimbra'),
+    ('Floresta Encantada', '2025-08-05', 7.00, 'Gerês'),
+    ('Paraíso Natural', '2025-08-10', 9.00, 'Açores');
 
 INSERT INTO hora_trilhas (id_trilha, hora_inicio, hora_fim) 
 VALUES
@@ -92,3 +54,31 @@ VALUES
     (13, '2025-08-01 09:30:00', '2025-08-01 11:30:00'),
     (14, '2025-08-05 08:00:00', '2025-08-05 11:00:00'),
     (15, '2025-08-10 07:30:00', '2025-08-10 12:00:00');
+
+
+
+INSERT INTO estadias (data_entrada, data_saida, preco_total, pago) 
+VALUES
+    ('2025-01-02', '2025-01-05', 75.00, 1),
+    ('2025-01-10', '2025-01-15', 125.00, 0),
+    ('2025-02-01', '2025-02-03', 50.00, 1),
+    ('2025-02-05', '2025-02-10', 125.00, 1);
+
+
+INSERT INTO caes (id_user, id_trilha, id_estadia, nome, raca, idade, estado, peso, sexo, esterilizado) 
+VALUES
+    (1, 1, 1, 'Thor', 'Boiadeiro de Berna', 3, 'Estadia', 40.00, 'Macho', 0),
+    (2, 2, 1, 'Luna', 'Cão Islandês', 2, 'Creche', 18.00, 'Fêmea', 1),
+    (3, 1, 1, 'Simba', 'Chow Chow', 4, 'Estadia', 25.00, 'Macho', 1),
+    (4, 4, 1, 'Max', 'Golden Retriever', 5, 'Creche', 30.00, 'Macho', 0),
+    (5, 1, 2, 'Nina', 'Husky Siberiano', 3, 'Estadia', 22.00, 'Fêmea', 1),
+    (6, 6, 3, 'Kira', 'Husky Siberiano', 1, 'Creche', 20.00, 'Fêmea', 0),
+    (7, 2, 3, 'Bolt', 'Terra Nova', 6, 'Creche', 55.00, 'Macho', 1),
+    (8, 8, 3, 'Pongo', 'Dálmata', 2, 'Estadia', 24.00, 'Macho', 0),
+    (9, 9, 2, 'Zeus', 'Cane Corso', 4, 'Creche', 45.00, 'Macho', 0),
+    (10, 10, 3, 'Mia', 'Border Collie', 2, 'Estadia', 19.00, 'Fêmea', 1),
+    (11, 5, 4, 'Bobby', 'Shih Tzu', 5, 'Estadia', 7.00, 'Macho', 1),
+    (12, 12, 4, 'Rex', 'Rottweiler', 6, 'Creche', 50.00, 'Macho', 0),
+    (13, 13, 4, 'Toby', 'Pinscher', 3, 'Estadia', 5.00, 'Macho', 1),
+    (14, 5, 4, 'Perdita', 'Dálmata', 2, 'Estadia', 23.00, 'Fêmea', 0),
+    (15, 15, 1, 'Snow', 'Bichon Frisé', 1, 'Creche', 6.00, 'Fêmea', 1);
