@@ -19,25 +19,25 @@ VALUES
     (0, 'André Lopes', '926789012', 'andre.lopes@email.com', 'Rua da Escola 19, Guimarães', '123456'),
     (1, 'Marcos Alves', '936262284', '37076@esjaloures.org', 'Rua da Escola 19, Guimarães', '$2y$10$uT2rgweFd5L5RJ/9/uKrkeI2rDIbZi2EwMR76WSaeN7xZ5l3kFg4S');
 
-INSERT INTO trilhas (nome, data, kms, localidade) 
+INSERT INTO trilhas (nome, kms, localidade) 
 VALUES
-    ('Parque Nacional Peneda Gerês', '2025-06-01', 10.00, 'Gerês'),
-    ('Pico do Areeiro', '2025-06-05', 7.00, 'Madeira'),
-    ('Poços Verdes do Sobroso', '2025-06-10', 5.00, 'Viana do Castelo'),
-    ('Sete Vales Suspensos', '2025-06-15', 12.00, 'Algarve'),
-    ('Trilho do Poço do Inferno', '2025-06-20', 6.00, 'Serra da Estrela'),
-    ('Trilho em Mira', '2025-06-25', 8.00, 'Mira'),
-    ('Trilho para a Ponta', '2025-07-01', 9.00, 'Madeira'),
-    ('Vereda da Ponta', '2025-07-05', 4.00, 'Madeira'),
-    ('A Aldeia Mágica', '2025-07-10', 3.00, 'Sintra'),
-    ('Vale do Rio Olo', '2025-07-15', 11.00, 'Mondim de Basto'),
-    ('Trilho 7 Vales Suspensos', '2025-07-20', 12.00, 'Lagoa'),
-    ('Praia da Costa', '2025-07-25', 5.00, 'Costa da Caparica'),
-    ('Sesimbra', '2025-08-01', 6.00, 'Sesimbra'),
-    ('Floresta Encantada', '2025-08-05', 7.00, 'Gerês'),
-    ('Paraíso Natural', '2025-08-10', 9.00, 'Açores');
+    ('Parque Nacional Peneda Gerês', 10.00, 'Gerês'),
+    ('Pico do Areeiro', 7.00, 'Madeira'),
+    ('Poços Verdes do Sobroso', 5.00, 'Viana do Castelo'),
+    ('Sete Vales Suspensos', 12.00, 'Algarve'),
+    ('Trilho do Poço do Inferno', 6.00, 'Serra da Estrela'),
+    ('Trilho em Mira', 8.00, 'Mira'),
+    ('Trilho para a Ponta', 9.00, 'Madeira'),
+    ('Vereda da Ponta', 4.00, 'Madeira'),
+    ('A Aldeia Mágica', 3.00, 'Sintra'),
+    ('Vale do Rio Olo', 11.00, 'Mondim de Basto'),
+    ('Trilho 7 Vales Suspensos', 12.00, 'Lagoa'),
+    ('Praia da Costa', 5.00, 'Costa da Caparica'),
+    ('Sesimbra', 6.00, 'Sesimbra'),
+    ('Floresta Encantada', 7.00, 'Gerês'),
+    ('Paraíso Natural', 9.00, 'Açores');
 
-INSERT INTO hora_trilhas (id_trilha, hora_inicio, hora_fim) 
+INSERT INTO cao_trilhas (id_trilha, hora_inicio, hora_fim) 
 VALUES
     (1, '2025-06-01 09:00:00', '2025-06-01 12:00:00'),
     (2, '2025-06-05 08:30:00', '2025-06-05 11:00:00'),
